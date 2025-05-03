@@ -14,9 +14,9 @@ on:
       - terraform/**
 
 env:
-  AWS_ACCESS_KEY_ID: ${{secret.AWS_ACCESS_KEY_ID}}
-  AWS_SECRET_ACCESS_KEY: ${{secret.AWS_SECRET_ACCESS_KEY}}
-  BUCKET_TF_STATE: ${{secret.BUCKET_TF_STATE}}
+  AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
+  AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+  BUCKET_TF_STATE: ${{secrets.BUCKET_TF_STATE}}
   EKS_CLUSTER: vprof-eks-gitops
   AWS_REGION: us-east-1
 
